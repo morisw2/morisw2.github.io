@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单文件管理程序</title>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .file-list li {
+            margin: 10px 0;
+        }
+        .file-list button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>简单文件管理程序</h1>
+    <div>
+        <input type="text" id="newFileName" placeholder="输入新文件名">
+        <button onclick="addFile()">添加文件</button>
+    </div>
+    <h2>文件列表</h2>
+    <ul id="fileList" class="file-list"></ul>
+<div id="gitalk-container">gitalk</div>
+<div id="SOHUCS" ></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cyxXhiUWK',
+conf: 'prod_c547aa5d870a04807b9df40b484860a5'
+});
+</script>
+    <script src="fileManager.js"></script>
+</body>
+</html>
